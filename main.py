@@ -29,9 +29,9 @@ def load_environment_variables():
     AUTH_TOKEN = os.getenv("AUTH_TOKEN")
     PROJECT_ID = os.getenv("PROJECT_ID")
     BATCH_SIZE = int(os.getenv("BATCH_SIZE", "50"))
-    BATCH_DELAY = int(os.getenv("BATCH_DELAY", "2"))
+    BATCH_DELAY = int(os.getenv("BATCH_DELAY", "3"))
     MAX_RETRIES = int(os.getenv("MAX_RETRIES", "3"))
-    INITIAL_RETRY_DELAY = int(os.getenv("INITIAL_RETRY_DELAY", "1"))
+    INITIAL_RETRY_DELAY = int(os.getenv("INITIAL_RETRY_DELAY", "3"))
     CSV_FILE_PATH = os.getenv("CSV_FILE_PATH")
 
 def load_issues_from_csv():
